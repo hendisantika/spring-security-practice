@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 4 | Front End Practice</title>
+
+    <!-- ICONS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" th:href="@{css/style.css}" type="text/css"/>
+
+  </head>
+  <body>
+    <!-- @@@@@@@ HEADER SECTION @@@@@@@ -->
+    <header>
+      <!-- NAV BAR -->
+      <nav class="font-poppins flex">
+        <div class="nav-logo flex">
+          <i class="bx bxl-spring-boot text-md text-white"></i>
+          <a href="#" class="text-white text-md font-bold" > Help Center</a>
+        </div>
+
+        <div class="nav-controls">
+          <ul class="flex">
+            <button class="btn btn-primary text-white text-uppercase btn-shadow">Submit a Request</button>
+            <a class="btn btn-secondary text-white text-uppercase btn-shadow" th:href="@{/login}">Sign In</a>
+          </ul>
+        </div>
+      </nav>
+      <!-- /NAV BAR -->
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="container flex flex-column justify-center align-center mx-auto h-100">
+          <div class="hero-title font-poppins">
+            <h1 class="text-xl">How can we help?</h1>
+          </div>
+
+          <div class="hero-input py-5 w-50 flex relative justify-center align-center">
+            <input type="text" class="search-text" placeholder="Search" />
+            <i class="arrow bx bx-right-arrow-alt text-lg absolute"></i>
+          </div>
+        </div>
+      </div>
+      <!-- /HERO -->
+    </header>
+    <!-- @@@@@@@ /HEADER SECTION @@@@@@@ -->
+
+    <!-- @@@@@@@ MAIN SECTION @@@@@@@ -->
+    <main>
+      <section id="content">
+        <div class="container py-5 mx-auto font-poppins">
+          <div class="grid cols-1 lg-cols-2 py-10">
+            <!-- first Column -->
+            <div class="flex">
+              <span><i class="bx bx-git-branch text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Using Abstract</h3>
+                <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /first Column -->
+
+            <!-- second Column -->
+            <div class="flex">
+              <span><i class="bx bxs-user-account text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Manage your account</h3>
+                <p>Configure your account settings, such as your email, profile details, and password.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /second Column -->
+
+            <!-- third Column -->
+            <div class="flex">
+              <span><i class="bx bx-line-chart text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Manage organizations, teams, and projects</h3>
+                <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /third Column -->
+
+            <!-- Fourth Column -->
+            <div class="flex">
+              <span><i class="bx bx-dollar text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Manage organizations, teams, and projects</h3>
+                <p>Change subscriptions and payment details.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /Fourth Column -->
+
+            <!-- Fift Column -->
+            <div class="flex">
+              <span><i class="bx bxs-key text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Authenticate to Abstract</h3>
+                <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /Fift Column -->
+
+            <!-- Sixth Column -->
+            <div class="flex">
+              <span><i class="bx bxs-chat text-xl text-blue"></i></span>
+              <div class="flex flex-column">
+                <h3>Abstract support</h3>
+                <p>Get in touch with a human.</p>
+                <span>
+                  <a href=""> Learn More</a>
+                </span>
+              </div>
+            </div>
+            <!-- /Sixth Column -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @@@@@@@ /MAIN SECTION @@@@@@@ -->
+  </body>
+</html>
